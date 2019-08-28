@@ -43,10 +43,8 @@ class FullscreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_fullscreen)
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
-        // Set up the user interaction to manually show or hide the system UI.
         fullscreen_content.setOnClickListener { changeColor() }
-        // fullscreen_content.setOnLongClickListener(mToggleShowUILongClickListener)
-        fullscreen_content.setOnLongClickListener{ toogleUI() }
+        fullscreen_content.setOnLongClickListener{ toggleUI() }
 
         hide()
     }
@@ -56,7 +54,7 @@ class FullscreenActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    private fun toogleUI() : Boolean {
+    private fun toggleUI() : Boolean {
         if (mVisible) {
             hide()
         } else {
