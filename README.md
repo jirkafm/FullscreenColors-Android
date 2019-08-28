@@ -1,7 +1,7 @@
 # FullscreenColors for Android
 
-A simple fullscreen application running on Android device. When user touch the screen application will draw random color. Application can be close button which appears
-when user will do long touch on a screen.
+A simple fullscreen application showing random colors on Android devices. When user touch a screen application will draw random color.
+Application can be terminated by the close button which appears when user will do **long touch** on the screen.
 
 Requires Android 4.4 or newer.
 
